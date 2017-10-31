@@ -29,10 +29,9 @@ function signIn() {
 
 function showName(){
 
-    firebase.database().ref('users/' + user).set({
-        username: name,
-        email: email,
-        profile_picture : imageUrl
+    firebase.database().ref('users/' + user.uid).set({
+       name: user.displayName,
+        email: user.email
       });
 
 
