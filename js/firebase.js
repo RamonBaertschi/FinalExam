@@ -9,6 +9,8 @@ function signIn() {
         var token = result.credential.accessToken;
         // The signed-in user info.
         var user = result.user;
+
+        //Zeige den Usernamen in der Konsole
         console.log(user.displayName);
         // ...
     }).catch(function (error) {
