@@ -28,5 +28,12 @@ function signIn() {
 }
 
 function showName(){
+
+    firebase.database().ref('users/' + userId).set({
+        username: name,
+        email: email,
+        profile_picture : imageUrl
+      });
+      
     document.getElementById("welcomUser").innerHTML = "Willkommen " + user.displayName;
 }
