@@ -35,5 +35,6 @@ function showName(){
         profile_picture : imageUrl
       });
       
+
     document.getElementById("welcomUser").innerHTML = "Willkommen " + user.displayName;
 }
