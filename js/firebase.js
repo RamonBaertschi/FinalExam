@@ -30,11 +30,14 @@ function signIn() {
 
 //Upload Funktionen
 
+function myFunction() {
+    var x = document.getElementById("imgTitle").value;}
+
 function confirmUpload() {
 	var metadata = {
 		contentType: 'image',
 		customMetadata: {
-			'title': (document.getElementById("imgTitle")).val()
+			'caption': ("imgTitle").val(x)
 		},
 	
 
