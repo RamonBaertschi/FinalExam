@@ -35,7 +35,7 @@ function confirmUpload() {
 		contentType: 'image',
 		customMetadata: {
 			'dogType': 'Lab',
-			'uploadedBy': user.uid,
+			//'uploadedBy': user.uid,
 			'title': $("#imgTitle").val(),
 			'caption': $("#imgDesc").val()
 		},
