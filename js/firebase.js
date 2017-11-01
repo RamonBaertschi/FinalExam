@@ -1,5 +1,7 @@
 var provider = new firebase.auth.GoogleAuthProvider();
 var user;
+var selectedFile;
+
 
 
 function signIn() {
@@ -32,12 +34,13 @@ function confirmUpload() {
 	var metadata = {
 		contentType: 'image',
 		customMetadata: {
+			'dogType': 'Lab',
 			'uploadedBy': user.uid,
 			'title': $("#imgTitle").val(),
-			'caption': $("#gameName").val()
+			'caption': $("#imgDesc").val()
 		},
 	};
-	var uploadTask = firebase.storage().ref().child('images/' + selectedFile.name).put(selectedFile, metadata);
+	var uploadTask = firebase.storage().ref().child('dogImages/' + selectedFile.name).put(selectedFile, metadata);
 	// Register three observers:
 	// 1. 'state_changed' observer, called any time the state changes
 	// 2. Error observer, called on failure

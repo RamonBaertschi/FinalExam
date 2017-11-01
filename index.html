@@ -18,16 +18,14 @@
     <h1>Test: Bild Upload und Referenz setzen</h1>
 
 
-    <button tpye="button" onclick="signIn();">Login</button>
-
+    <button type="button" onclick="signIn();"> Sign-In With Google</button>
+    
 <h3>Upload Datei</h3>
-<input type="file" id="file">
-
+<input type="file" id="upload" required/>
 <input type="text" placeholder="Image Title" id="imgTitle">
-<input type="text" placeholder="Spielname" id="gameName">
+<input type="text" placeholder="Image Caption" id="imgDesc">
 
-
-<button type="button" onclick="confirmUpload()">SUBMIT</button>
+<button type="button" class="btn btn-primary upload-group" onclick="confirmUpload()">SUBMIT</button>
 
     <script src="https://www.gstatic.com/firebasejs/4.6.0/firebase.js"></script>
     <script>
