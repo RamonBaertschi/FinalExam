@@ -37,7 +37,7 @@ function confirmUpload() {
 	var metadata = {
 		contentType: 'image',
 		customMetadata: {
-			'caption': ("imgTitle").val(x)
+			'caption': ("imgTitle").val()
 		},
 	
 
