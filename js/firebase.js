@@ -33,7 +33,6 @@ function signIn() {
 function confirmUpload() {
 	var metadata = {
 		contentType: 'image',
-		firebaseStorageDownloadTokens: uuid,
 		customMetadata: {
 			'title': (document.getElementById("imgTitle")).val()
 		},
