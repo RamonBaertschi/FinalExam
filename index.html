@@ -22,7 +22,12 @@
 
 <h3>Upload Datei</h3>
 <input type="file" id="file">
-<button type="button" id="uploadButton" onclick="uploadFile()">Submit</button>
+
+<input type="text" placeholder="Image Title" id="imgTitle">
+<input type="text" placeholder="Spielname" id="gameName">
+
+
+<button type="button" id="uploadButton" onclick="confirmUpload()">Submit</button>
 
     <script src="https://www.gstatic.com/firebasejs/4.6.0/firebase.js"></script>
     <script>
