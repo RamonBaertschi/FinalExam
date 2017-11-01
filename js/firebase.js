@@ -37,7 +37,8 @@ function confirmUpload() {
 	var metadata = {
 		contentType: 'image',
 		customMetadata: {
-			'caption': ("imgTitle").val()
+			'Spiel': 'Oberdorf',
+			
 		},
 	
 
