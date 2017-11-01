@@ -33,12 +33,14 @@ function signIn() {
 function confirmUpload() {
 	var metadata = {
 		contentType: 'image',
+		downloadURLs,
 		customMetadata: {
-			
-			//'uploadedBy': user.uid,
-			'title': ("#imgTitle").val(),
-			'caption': ("#imgDesc").val()
+			'title': (document.getElementById("imgTitle")).val()
 		},
+	
+
+
+
 	};
 	var uploadTask = firebase.storage().ref().child('dogImages/' + selectedFile.name).put(selectedFile, metadata);
 	// Register three observers:
